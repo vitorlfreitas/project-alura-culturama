@@ -1,0 +1,114 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    height: auto;
+    padding: 30px;
+}
+.menu__submenu {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+.categorias__lista {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.destaques {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.destaques__barra {
+    flex-grow: 1;
+}
+.destaques__seta {
+    white-space: nowrap;
+}
+/* Eventos */
+.eventos {
+    display: flex;
+    flex-direction: column;
+}
+.eventos__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+}
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+.eventos__botao {
+    margin-top: 1rem;
+    align-self: center;
+}
+/* Agenda Section */
+.agenda {
+    display: flex;
+    flex-direction: column;
+}
+.agenda__titulo {
+    align-self: flex-start;
+}
+.agenda__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+}
+.agenda__item {
+    flex-grow: 1;
+}
+.agenda__botao {
+    margin-top: 1rem;
+    align-self: flex-end;
+}
+/* Rodape */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rodape__logo {
+    align-self: flex-end;
+}
+@media screen and (min-width: 720px) {
+    .menu {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 40px;
+        padding: 30px;
+    }
+    .categorias__lista {
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+    }
+    .eventos__botao {
+        align-self: flex-end;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+    .menu {
+        column-gap: 150px;
+        padding: 20px 0px;
+    }
+    .menu__item:nth-child(1) {
+        order: -2;
+    }
+    .menu__pesquisar {
+        order: -1;
+    }
+    .menu__submenu {
+        column-gap: 70px;
+    }
+}
